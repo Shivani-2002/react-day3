@@ -1,0 +1,163 @@
+
+.App{
+  position:relative;
+  height:130vh;
+  background-color:rgb(255, 224, 246);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.App>img{
+  filter: blur(8px);
+  height:100%;
+}
+.container{
+  position:absolute;
+  top:0;
+  width:80%;
+  /* border:3px solid palevioletred; */
+  margin-left: 10%;
+  margin-top: 1%;
+}
+.container .padd{
+  padding:15px;
+  background-color:rgba(255, 255, 255, 0.5);
+  /* border:5px solid green; */
+  /* background-color: white; */
+}
+
+.input-group{
+  display:flex;
+  justify-content: space-between;
+}
+.search-field{
+  width:80%;
+  height:35px;
+  font-size: 18px;
+  border-radius: 20px;
+  outline:none;
+  border:2px solid rgb(255, 196, 228);
+  text-indent: 13px;
+}
+.btn{
+  width:15%;
+  font-size: 17px;
+  font-weight: bolder;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  outline:none;
+  color:white;
+  border:none;
+  /* border-style:ridge; */
+  cursor:pointer;
+  background-color:rgb(255, 196, 228);
+  transition: 0.5s;
+}
+.btn:hover{
+  font-size:18px;
+  letter-spacing: 1.5px;
+  
+}
+
+.movie-container{
+  /* border:4px solid blue; */
+  margin-top: 15px;
+  /* box-shadow: 2px 2px 10px rgb(255, 255, 255); */
+  background-color:white;
+}
+.movie{
+  display: flex;
+  box-shadow: 2px 2px 10px rgb(255, 255, 255);
+}
+.padd h1{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.poster{
+  height:540px;
+  width:37%;
+  overflow: hidden;
+  display: flex;
+  align-self: center;
+  /* border:5px solid rgb(233, 173, 8); */
+}
+.img-poster{
+  width:100%;
+  height:100%;
+}
+.details>padd{
+  background-color:rgba(255, 255, 255, 0.5);
+}
+.details{
+  width:65%;
+  height:100%;
+  /* background-color:rgb(255, 255, 255); */
+  
+  /* color:white; */
+}
+.ratings{
+  display: flex;
+  
+}
+
+.ratings > div {
+  margin-right:20px;
+}
+
+
+@media (max-width: 769px)
+{
+  .App{
+    height:180vh;
+  }
+  .container{
+    position:absolute;
+    top:0;
+    width:100%;
+    margin-left: 0%;
+    
+  }
+  .container .padd{
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .search-field{
+    width:65%;
+  }
+
+  .btn{
+    width:30%;
+    font-size: 13px;
+  }
+  .btn:hover{
+  font-size:14px;
+  letter-spacing: 1.5px;
+  }
+  .movie-container{
+    margin-top: 10%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+  }
+  
+
+  .movie{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 10px rgb(255, 255, 255);
+  }
+  .poster{
+    margin-top: 6%;
+    height:280px;
+    width:80%;
+    overflow: hidden;
+    display: flex;
+    align-self: center;
+    
+  }
+  .img-poster{
+    width:100%;
+    height:100%;
+  }
+  .details{
+    margin-left: 3%;
+    width:94%;
+   
+  }
+} 
